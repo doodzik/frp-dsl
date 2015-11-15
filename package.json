@@ -1,0 +1,57 @@
+{
+  "name": "frp-middelware",
+  "version": "0.0.1",
+  "description": "an abstraction for adding minimal functional reactive middelware functionality",
+  "main": "lib/middelware.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "prepublish": "gulp build",
+    "postpublish": "gulp tag"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doodzik/frp-middelware.git"
+  },
+  "keywords": [
+    "middelware",
+    "frp",
+    "dsl",
+    "functional",
+    "reactive",
+    "programming",
+    "stream",
+    "streams",
+    "EventStream",
+    "Rx",
+    "RxJs",
+    "bacon.js",
+    "bacon",
+    "Observable"
+  ],
+  "author": {
+    "name": "Frederik Dudzik",
+    "url": "http://dudzik.co"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/doodzik/frp-middelware/issues"
+  },
+  "homepage": "https://github.com/doodzik/frp-middelware#readme",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.4",
+    "babel-preset-es2015": "^6.1.4",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-exec": "^2.1.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  }
+}
