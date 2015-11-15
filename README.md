@@ -1,5 +1,7 @@
 # FRP Middelware 
 
+[![Build Status](https://travis-ci.org/doodzik/frp-middleware.svg?branch=master)](https://travis-ci.org/doodzik/frp-middleware)
+
 This module aims to ease building middleware DSL's.
 It implements a basic functional reactive programming Interface.
 
@@ -30,7 +32,7 @@ import Middleware from 'frp-middleware'
 class SomeStream extends Middleware {
   subscribe() { // or you could use the 'emit' method. it is the same thing
     const middleware = super()
-    setIntervall(() => middleware('hello world'))
+    setIntervall(() => middleware('hello world'), 500)
   }
 }
 ```
