@@ -14,9 +14,10 @@ $ npm install frp-middelware --save
 ### how to use an Stream
 ```javascript
 let stream = new SomeStream()
-.map(data  => data + '!!!') // => hello world!!!
-.fork(data => data + '???') // => hello world!!!???
-.map(data  => data + '...') // => hello world!!!...
+
+stream.map(data  => data + '!!!') // => hello world!!!
+      .fork(data => data + '???') // => hello world!!!???
+      .map(data  => data + '...') // => hello world!!!...
 
 // invokes the stream
 stream.subscribe()
