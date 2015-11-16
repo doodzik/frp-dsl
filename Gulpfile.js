@@ -7,7 +7,7 @@ const gutil       = require('gulp-util')
 const sourcemaps  = require('gulp-sourcemaps')
 const babel       = require('gulp-babel')
 
-gulp.task('build', ['clean'], function() {
+gulp.task('build', function() {
   return gulp
     .src(['src/**/*.js'])
     .pipe(sourcemaps.init())
@@ -16,15 +16,8 @@ gulp.task('build', ['clean'], function() {
     .pipe(gulp.dest('lib'))
 })
 
-// gulp clean -> clean generated files
-gulp.task('clean', function(done) {
-  del([
-    'lib'
-  ], done)
-})
-
 // gulp tag -> Tag this release
-gulp.task('tag', ['changes'], function() {
+gulp.task('tag', ['changes', 'clean'], function() {
   const version = require('./package.json').version
   const tag     = 'v' + version
 
@@ -50,4 +43,11 @@ gulp.task('changes', function() {
   const changes   = match[2].trim()
   assert(changes, 'CHANGELOG.md empty entry for version ' + version)
   File.writeFileSync('.changes', changes)
+})
+
+// gulp clean -> clean generated files
+gulp.task('clean', function(done) {
+  del([
+    'lib'
+  ], done)
 })

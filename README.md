@@ -31,7 +31,7 @@ import Middleware from 'frp-middleware'
 
 class SomeStream extends Middleware {
   subscribe() { // or you could use the 'emit' method. it is the same thing
-    const middleware = super()
+    const middleware = super.subscribe()
     setIntervall(() => middleware('hello world'), 500)
   }
 }
