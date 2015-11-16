@@ -1,6 +1,6 @@
 import { isEmpty, pipe } from './util'
 
-export default class Middelware {
+class Middelware {
   constructor() {
     this._middleware = []
   }
@@ -30,3 +30,5 @@ export default class Middelware {
     return x => x
   }
 }
+
+export default Middelware

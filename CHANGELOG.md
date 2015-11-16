@@ -1,3 +1,8 @@
+## Version 0.0.4 2015-11-16
+
+Fix babel compile error. 
+Reference: https://github.com/babel/babel/issues/2700
+
 ## Version 0.0.3 2015-11-16
 
 Fix build script
