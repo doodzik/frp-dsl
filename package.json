@@ -1,8 +1,8 @@
 {
-  "name": "frp-middelware",
+  "name": "frp-middleware",
   "version": "0.0.1",
-  "description": "an abstraction for adding minimal functional reactive middelware functionality",
-  "main": "lib/middelware.js",
+  "description": "an abstraction for adding minimal functional reactive middleware functionality",
+  "main": "lib/middleware.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "prepublish": "gulp build",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doodzik/frp-middelware.git"
+    "url": "git+https://github.com/doodzik/frp-middleware.git"
   },
   "keywords": [
-    "middelware",
+    "middleware",
     "frp",
     "dsl",
     "functional",
@@ -34,9 +34,9 @@
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/doodzik/frp-middelware/issues"
+    "url": "https://github.com/doodzik/frp-middleware/issues"
   },
-  "homepage": "https://github.com/doodzik/frp-middelware#readme",
+  "homepage": "https://github.com/doodzik/frp-middleware#readme",
   "babel": {
     "presets": [
       "es2015"
