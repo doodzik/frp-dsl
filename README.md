@@ -53,3 +53,7 @@ Should be implemented as a way to start listening to the stream.
 ### \#emit
 Returns the middleware function.
 Should be implemented as a way to fire events on the stream.
+
+# Examples
+
+[simple-tcp](https://github.com/doodzik/simple-tcp)

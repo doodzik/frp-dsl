@@ -1,1 +1,2 @@
-Fix build script
+Fix babel compile error. 
+Reference: https://github.com/babel/babel/issues/2700
