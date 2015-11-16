@@ -1,6 +1,6 @@
 {
   "name": "frp-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "an abstraction for adding minimal functional reactive middleware functionality",
   "main": "lib/middleware.js",
   "scripts": {
