@@ -1,6 +1,6 @@
 {
   "name": "frp-middleware",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "an abstraction for adding minimal functional reactive middleware functionality",
   "main": "lib/middleware.js",
   "scripts": {
@@ -46,9 +46,7 @@
     "babel-core": "^6.1.4",
     "babel-preset-es2015": "^6.1.4",
     "del": "^2.1.0",
-    "mocha": "^2.3.3"
-  },
-  "dependencies": {
+    "mocha": "^2.3.3",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.0",
     "gulp-exec": "^2.1.2",

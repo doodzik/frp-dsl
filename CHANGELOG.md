@@ -1,3 +1,7 @@
+## Version 0.0.5 2015-11-17
+
+Fix development dependencies being used as regular dependencies
+
 ## Version 0.0.4 2015-11-16
 
 Fix babel compile error. 

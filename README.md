@@ -7,9 +7,9 @@ It implements a basic functional reactive programming Interface.
 
 # Installation
 
-`
+```bash
 $ npm install frp-middelware --save
-`
+```
 
 # Usage
 
@@ -56,4 +56,4 @@ Should be implemented as a way to fire events on the stream.
 
 # Examples
 
-[simple-tcp](https://github.com/doodzik/simple-tcp)
+[plain-tcp](https://github.com/doodzik/plain-tcp)
